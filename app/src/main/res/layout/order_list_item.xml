@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rfid_read_bgcolor"
+    android:background="#fff"
+    android:orientation="horizontal">
+
+    <TextView
+        style="@style/list"
+        android:id="@+id/order_list_num"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:textSize="20dp" />
+
+    <TextView
+        style="@style/list"
+        android:id="@+id/order_list_menu"
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:textSize="20dp" />
+    <TextView
+        style="@style/list"
+        android:textSize="20dp"
+        android:id="@+id/order_list_quantity"
+        android:gravity="center"
+        android:layout_weight="2"
+        />
+    <TextView
+        android:id="@+id/order_list_total"
+        style="@style/list"
+        android:layout_marginRight="0dp"
+        android:paddingRight="10dp"
+        android:layout_weight="3"
+        android:gravity="right"
+        android:textSize="20dp" />
+</LinearLayout>

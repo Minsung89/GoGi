@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="#eaf0fa"
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:splitMotionEvents="false">
+
+            <RelativeLayout style="@style/oderTable"
+                android:id="@+id/one_table">
+                <TextView
+                    android:id="@+id/tb_01"
+                    style="@style/oderTableTextView"
+                    android:text="1번 테이블" />
+                <TextView
+                    android:id="@+id/tb_tv_01"
+                    style="@style/oderTableTextView"
+                    android:layout_below="@id/tb_01"
+                    android:textSize="15dp"
+                    android:text="빈 테이블" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/oderTable"
+                android:id="@+id/second_table">
+
+                <TextView
+                    android:id="@+id/tb_02"
+                    style="@style/oderTableTextView"
+                    android:text="2번 테이블" />
+
+                <TextView
+                    android:id="@+id/tb_tv_02"
+                    style="@style/oderTableTextView"
+                    android:layout_below="@id/tb_02"
+                    android:textSize="15dp"
+                    android:text="빈 테이블" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:splitMotionEvents="false">
+
+            <RelativeLayout style="@style/oderTable"
+                android:id="@+id/three_table">>
+
+                <TextView
+                    android:id="@+id/tb_03"
+                    style="@style/oderTableTextView"
+                    android:text="3번 테이블" />
+
+                <TextView
+                    android:id="@+id/tb_tv_03"
+                    style="@style/oderTableTextView"
+                    android:textSize="15dp"
+                    android:layout_below="@id/tb_03"
+                    android:text="빈 테이블" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/oderTable"
+                android:id="@+id/four_table">>
+
+                <TextView
+                    android:id="@+id/tb_04"
+                    style="@style/oderTableTextView"
+                    android:text="4번 테이블" />
+
+                <TextView
+                    android:id="@+id/tb_tv_04"
+                    style="@style/oderTableTextView"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tb_04"
+                    android:text="빈 테이블"
+                    android:textSize="15dp" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:splitMotionEvents="false">
+
+            <RelativeLayout style="@style/oderTable"
+                android:id="@+id/five_table">
+
+                <TextView
+                    android:id="@+id/tb_05"
+                    style="@style/oderTableTextView"
+                    android:text="5번 테이블" />
+
+                <TextView
+                    android:id="@+id/tb_tv_05"
+                    style="@style/oderTableTextView"
+                    android:textSize="15dp"
+                    android:layout_below="@id/tb_05"
+                    android:text="빈 테이블" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/oderTable"
+                android:id="@+id/six_table">
+                <TextView
+                    android:id="@+id/tb_06"
+                    style="@style/oderTableTextView"
+                    android:text="6번 테이블" />
+                <TextView
+                    android:id="@+id/tb_tv_06"
+                    style="@style/oderTableTextView"
+                    android:layout_below="@id/tb_06"
+                    android:textSize="15dp"
+                    android:text="빈 테이블" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:splitMotionEvents="false">
+
+            <RelativeLayout style="@style/oderTable"
+                android:id="@+id/seven_table">
+
+                <TextView
+                    android:id="@+id/tb_07"
+                    style="@style/oderTableTextView"
+                    android:text="7번 테이블" />
+
+                <TextView
+                    android:id="@+id/tb_tv_07"
+                    style="@style/oderTableTextView"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tb_07"
+                    android:layout_marginTop="-1dp"
+                    android:text="빈 테이블"
+                    android:textSize="15dp" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/oderTable"
+                android:id="@+id/eight_table">
+
+                <TextView
+                    android:id="@+id/tb_08"
+                    style="@style/oderTableTextView"
+                    android:text="8번 테이블" />
+
+                <TextView
+                    android:id="@+id/tb_tv_08"
+                    style="@style/oderTableTextView"
+                    android:textSize="15dp"
+                    android:layout_below="@id/tb_08"
+                    android:text="빈 테이블" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

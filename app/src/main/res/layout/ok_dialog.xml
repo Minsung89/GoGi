@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="20dp"
+        android:gravity="center_vertical"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:text="제목"
+        android:background="#FF6482B9"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+    <TextView
+        android:background="@drawable/my_textview_border"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:id="@+id/dialog_message"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="left"
+        android:textSize="16dp"
+        android:hint="내용을 입력하세요."/>
+        <Button
+            android:layout_marginBottom="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/dialog_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/my_button"
+            android:gravity="center"
+            android:text="확인"
+            android:textColor="#fff"
+            android:textSize="16dp" />
+    </RelativeLayout>
+
+</LinearLayout>

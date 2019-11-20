@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FF6482B9"
+   >
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/screen_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:lottie_fileName="particle.json"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        />
+    <LinearLayout
+        android:layout_margin="150dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/meat" />
+
+    </LinearLayout>
+
+</RelativeLayout>

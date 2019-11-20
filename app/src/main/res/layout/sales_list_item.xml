@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rfid_read_bgcolor"
+    android:background="#fff"
+    android:orientation="horizontal"
+    android:paddingBottom="1dp">
+    <TextView
+        style="@style/list"
+        android:id="@+id/sales_order_id"
+        android:layout_width="0dp"
+        android:layout_weight="3.3"
+        android:textSize="12dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        />
+
+    <TextView
+        style="@style/list"
+        android:id="@+id/sales_order_table_no"
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        android:textSize="12dp" />
+    <TextView
+        style="@style/list"
+        android:textSize="12dp"
+        android:id="@+id/sales_order_date"
+        android:gravity="center"
+        android:layout_weight="3"
+        />
+    <TextView
+        android:id="@+id/sales_order_result"
+        style="@style/list"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:textSize="12dp" />
+    <TextView
+        android:id="@+id/sales_order_type"
+        style="@style/list"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="11dp" />
+    <TextView
+        android:id="@+id/sales_order_price"
+        style="@style/list"
+        android:layout_marginRight="0dp"
+        android:layout_weight="1.7"
+        android:gravity="right|center_vertical"
+        android:paddingRight="3dp"
+        android:textSize="12dp" />
+
+</LinearLayout>

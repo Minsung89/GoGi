@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="#eaf0fa"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:splitMotionEvents = "false"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                style="@style/menuBtn"
+                android:padding="10dp"
+                android:layout_marginBottom="15dp"
+                android:id="@+id/btn_order"
+                android:textSize="20dp"
+                android:text="주문관리"
+                android:drawableTop="@drawable/order"
+                />
+            <Button
+                android:layout_marginLeft="10dp"
+                style="@style/menuBtn"
+                android:padding="10dp"
+                android:layout_marginBottom="15dp"
+                android:id="@+id/btn_sales"
+                android:textSize="20dp"
+                android:text="매출관리"
+                android:textAllCaps="false"
+                android:drawableTop="@drawable/chart"/>
+        </LinearLayout>
+        <LinearLayout
+                android:splitMotionEvents = "false"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <Button
+                style="@style/menuBtn"
+                android:padding="10dp"
+                android:layout_marginBottom="15dp"
+                android:id="@+id/btn_past"
+                android:textSize="20dp"
+                android:text="지난내역"
+                android:drawableTop="@drawable/history"/>
+            <Button
+                android:layout_marginLeft="10dp"
+                style="@style/menuBtn"
+                android:padding="10dp"
+                android:layout_marginBottom="15dp"
+                android:id="@+id/btn_setting"
+                android:textSize="20dp"
+                android:text="설정"
+                android:textAllCaps="false"
+                android:drawableTop="@drawable/setting"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="10dp"
+    android:background="#eaf0fa"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:padding="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <TextView
+                android:paddingLeft="10dp"
+                android:background="#e9f4f9"
+                android:id="@+id/past_date"
+                android:paddingRight="10dp"
+                android:drawableRight="@android:drawable/arrow_down_float"
+                android:gravity="center_vertical"
+                android:text="날짜를 선택하세요"
+                android:layout_weight="4"
+                android:layout_width="0dp"
+                android:textStyle="bold"
+                android:layout_height="match_parent"/>
+            <Button
+                android:id="@+id/past_search"
+                android:padding="5dp"
+                android:text="검색"
+                style="@style/btn"
+                android:layout_weight="2"/>
+        </LinearLayout>
+
+
+
+        <FrameLayout
+            android:layout_weight="7"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            >
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/chart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="80dp">
+            </com.github.mikephil.charting.charts.BarChart>
+            <android.support.design.widget.FloatingActionButton
+                android:backgroundTint="#1c97ef"
+                android:id="@+id/past_fab"
+                android:layout_marginBottom="40dp"
+                android:layout_marginRight="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:src="@drawable/detail"/>
+            <LinearLayout
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:background="@drawable/textview_line"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:padding="6dp"
+                    android:gravity="center"
+                    android:text="합계"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:background="@drawable/textview_line"
+                    android:textColor="#fff"
+                    android:id="@+id/past_totalCount"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:text="0"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <LinearLayout
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btn_past_back"
+                style="@style/btn"
+                android:text="뒤로가기"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
